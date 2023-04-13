@@ -4,8 +4,7 @@
     top:50px;
     left:0;
     position : fixed;
-    border : 1px solid #444;
-    background-color: aquamarine;
+    background-color: antiquewhite;
     transform : scale(0);
     transition : transform .5s;
     @media screen and (min-width:720px) {
@@ -13,11 +12,25 @@
         height : 50%;
         top:25%;
         left:25%;
-        
     }
  
 }
+.carrousel__ouvrir{
+    margin-left: 50%;
+    width: 150px;
+    height: 70px;
+    border-radius: 0.5rem;
+    background-color:antiquewhite ;
+    border: none;
+    box-shadow: 0px -5px 14px 7px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+.carrousel__ouvrir:hover{
+    color: aliceblue;
+    background-color:rgb(69, 65, 59) ;
+
+}
 .carrousel__x{
+    border: none;
     position: absolute;
     top:0;
     right: 0;
