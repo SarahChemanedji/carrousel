@@ -15,6 +15,12 @@ console.log(galerie__img)
 /*--------------------------Positionnement de image active ----------*/
 let index = 0; 
 let ancien_index = -1;
+
+
+let position = 0; //permet indexer les images de la galerie
+
+
+
 /* ----------------------------------------------------  ouvrir boîte modale */
 bouton.addEventListener('mousedown', function(){
     console.log('ouvrir la boîte modale')
@@ -40,10 +46,15 @@ carrousel__x.addEventListener('mousedown', function(){
 
 function ajouter_img_dans_carrousel()
 {
-  for (const elm of galerie__img)
-  {
 
-      
+  for (const elm of galerie__img)
+  { 
+     elm.dataset.index = position;
+    elm.addEventListener('mousedown', function(){
+      index = this.dataset.index
+      console.log(index);
+    })
+
     creation_img_carrousel(elm);
     creaction_radio_carrousel();
   }
@@ -60,7 +71,7 @@ function creation_img_carrousel(elm){
 /**
  * Creation d'un radio bouton  
  */
-let position = 0;
+
 
 function creaction_radio_carrousel() {
   let rad = document.createElement('input');
@@ -85,11 +96,19 @@ function creaction_radio_carrousel() {
       carrousel__figure.children[index].classList.add('carrousel__img--activer');
     ancien_index = index;
   
-
+    afficher_image(index)
   })
 
 }
+function afficher_image(index){
 
-
+  if (ancien_index != -1){
+   // carrousel__figure.children[ancien_index].style.opacity = 0  
+   carrousel__figure.children[ancien_index].classList.remove('carrousel__img--activer')
+  }
+  // carrousel__figure.children[index].style.opacity = 1
+  carrousel__figure.children[index].classList.add('carrousel__img--activer')
+  ancien_index = index
+}
 
 })()// les deux parenthese ici c pour autoexecuter 
