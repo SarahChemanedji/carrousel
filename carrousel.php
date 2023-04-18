@@ -32,7 +32,7 @@ function enfiler_script_css()
             plugin_dir_url(__FILE__) . 'js/carrousel.js',
             array(),
             $version_js,
-            true
+            true // ajoute le scripte carrousel.js a la fin de la page
     );
 
 }

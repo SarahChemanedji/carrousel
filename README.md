@@ -1,7 +1,11 @@
 # Lab4 (2 points)
+## Autheur Sarah Chemanedji
+## L'objectif du Lab4:
 
-## L\'objectif du Lab4:
+- L'objectif du lab 4 etait de recreer un carrousel et de rajouter un champ personaliser. Dans mon cas j'ai rajouter un lien au site sur le 
+le quel j'ai pris mes images et la date a la quel jai publier le temps personaliser. 
 
+## Devis
 - Ajouter quelques champs personnalisés pour la page d'accueil
 - Utilisez des types de champs qu'on a pas encore utilisé
 - Débuter le carrousel
