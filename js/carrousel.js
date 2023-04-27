@@ -17,7 +17,8 @@
  let ancien_index = -1
  let position = 0 // permet d'indexer les image de la galerie et 
 
-
+let flechDroite = document.querySelector(".flechDroite")
+let flechGauche = document.querySelector(".flechGauche")
 //------------------------Ouvrir boite modele avec galerie----------//
  for (const elm of galerie__img)
  {
@@ -51,6 +52,18 @@
  })
  
  
+ flechDroite.addEventListener('mousedown',function(){
+  if(index == galerie__img.length-1){
+    index = 0 ;
+  }
+  else{
+    index++;
+  }
+  afficher_image(index);
+ })
+
+
+
  
  /** 
   * ajouter_img_dans_carrousel
@@ -106,7 +119,6 @@
    ancien_index = index
  }
  
-
  /**
   * Permet de verifier si la class  "carrousel--active" se trouve dans la liste des class carrousel
   * carrousel.classList.contain('carousel--activer');
@@ -116,3 +128,4 @@
   */
  
  })()
+ 
