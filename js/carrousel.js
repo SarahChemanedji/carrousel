@@ -62,7 +62,17 @@ let flechGauche = document.querySelector(".flechGauche")
   afficher_image(index);
 
  })
+ flechGauche.addEventListener('mousedown',function(){
+  if(index == 0 ){
+    index = galerie__img.length-1;  
+  }
+  else{
+    index--;
+  }
+  
+  afficher_image(index);
 
+ })
 
 
  

@@ -70,11 +70,13 @@
   bottom: 0;
   text-align: center;
   width: 100%;
+  background-color: rgba(140, 168, 124, 0.3803921569);
 }
 
 .carrousel__rad {
   display: inline-block;
   margin: 5px;
+  accent-color: #8CA87C;
 }
 
 .flechDroite {
@@ -87,4 +89,16 @@
   top: 50%;
   right: 2%;
   transform: rotate(-45deg);
+}
+
+.flechGauche {
+  z-index: 5;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  position: absolute;
+  top: 50%;
+  left: 2%;
+  transform: rotate(135deg);
 }/*# sourceMappingURL=style.css.map */
