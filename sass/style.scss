@@ -30,11 +30,17 @@
 
 }
 .carrousel__x{
+
     border: none;
     position: absolute;
-    top:0;
-    right: 0;
+    top:4%;
+    right: 2%;
     z-index: 3;
+    padding:0.4rem;
+    border-radius: 50%;
+    color: #485740;
+    background-color: #8ca87c61;
+
 }
 .carrousel__figure{
     overflow: hidden;
