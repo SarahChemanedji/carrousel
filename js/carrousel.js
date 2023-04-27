@@ -60,6 +60,7 @@ let flechGauche = document.querySelector(".flechGauche")
     index++;
   }
   afficher_image(index);
+
  })
 
 
