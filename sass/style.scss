@@ -78,7 +78,8 @@
 
 .flechDroite {
     z-index: 5;
-    border: solid black;
+    border: solid #8CA87C;
+    transform: scale(2);
     border-width: 0 3px 3px 0;
     display: inline-block;
     padding: 3px;
@@ -89,7 +90,7 @@
   }
   .flechGauche {
     z-index: 5;
-    border: solid black;
+    border: solid #8CA87C;
     border-width: 0 3px 3px 0;
     display: inline-block;
     padding: 3px;
@@ -97,4 +98,9 @@
     top:50%;
     left: 2%;
     transform: rotate(135deg);
+    
+  }
+  .flechDroite:hover , .flechGauche:hover{
+    border: solid #FFEBEB;
+    border-width: 0 3px 3px 0;
   }
