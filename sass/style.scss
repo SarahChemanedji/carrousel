@@ -15,20 +15,21 @@
     }
  
 }
-.carrousel__ouvrir{
-    margin-left: 50%;
-    width: 150px;
-    height: 70px;
-    border-radius: 0.5rem;
-    background-color:antiquewhite ;
-    border: none;
+// Utilise plus le bouton pour ouvrir carrousel  mais ceci est le code css pour bouton
+// .carrousel__ouvrir{
+//     margin-left: 50%;
+//     width: 150px;
+//     height: 70px;
+//     border-radius: 0.5rem;
+//     background-color:antiquewhite ;
+//     border: none;
    
-}
-.carrousel__ouvrir:hover{
-    color: aliceblue;
-    background-color:rgb(69, 65, 59) ;
+// }
+// .carrousel__ouvrir:hover{
+//     color: aliceblue;
+//     background-color:rgb(69, 65, 59) ;
 
-}
+// }
 .carrousel__x{
     border: none;
     position: absolute;
@@ -64,6 +65,7 @@
 }
 .carrousel--activer {
     transform : scale(1);
+    pointer-events: none;
     border:2rem solid #374231;
     
 
