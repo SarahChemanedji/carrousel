@@ -13,8 +13,8 @@
  // console.log("galerie__img: " + galerie__img.length)
  // console.log(carrousel.tagName)
  /* ------------------------------------------ positionnement de l'image active du carrousel */
- let index = 0
- let ancien_index = -1
+ let index = 0 // permet d'identifier l'image courante du carrousel 
+ let ancien_index = -1 // permet d'identifier l'image precedente 
  let position = 0 // permet d'indexer les image de la galerie et 
 
 let flechDroite = document.querySelector(".flechDroite")
