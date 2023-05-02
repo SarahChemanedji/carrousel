@@ -30,7 +30,6 @@
 
 }
 .carrousel__x{
-
     border: none;
     position: absolute;
     top:4%;
@@ -38,8 +37,9 @@
     z-index: 3;
     padding:0.4rem;
     border-radius: 50%;
-    color: #485740;
-    background-color: #8ca87c61;
+    color: #ffffff;
+    background-color: #324129d4;
+    cursor: pointer;
 
 }
 .carrousel__figure{
@@ -56,10 +56,7 @@
     height:100%;  
     opacity: 0;
     transform: opacity .5s;
-    box-shadow: 0px 6px 12px 0px rgba(0,0,0,0.48);
-    
-    
-
+    box-shadow: 0px 6px 12px 0px rgba(0,0,0,0.48); 
 }
 .carrousel__img--activer{
     opacity: 1;
@@ -81,6 +78,7 @@
     display: inline-block;
     margin: 5px;
     accent-color: #8CA87C;
+    cursor: pointer;
 }
 
 .flechDroite {
@@ -94,6 +92,7 @@
     top:50%;
     right: 2%;
     transform: rotate(-45deg);
+    cursor: pointer;
   }
   .flechGauche {
     z-index: 5;
@@ -105,7 +104,7 @@
     top:50%;
     left: 2%;
     transform: rotate(135deg);
-    
+    cursor: pointer;
   }
   .flechDroite:hover , .flechGauche:hover{
     border: solid #FFEBEB;
