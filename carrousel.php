@@ -32,7 +32,7 @@ function enfiler_script_css()
             plugin_dir_url(__FILE__) . 'js/carrousel.js',
             array(),
             $version_js,
-            true // ajoute le scripte carrousel.js a la fin de la page
+            true // ajoute le script carrousel.js à la fin de la page
     );
 
 }
@@ -40,14 +40,15 @@ add_action('wp_enqueue_scripts', 'enfiler_script_css' );
 
 function genere_boite()
 {
-    return ' 
+    return '
             <div class="carrousel">
-            <i class="flechDroite"></i>
-            <i class="flechGauche"></i>
+            <div class="effetVague"></div>
                 <button class="carrousel__x">X</button>
                 <figure class="carrousel__figure"></figure>
-                <form class="carrousel__form"></form>
+                <form class="carrousel__form"></form> 
+                <button class="carrousel__precedent">«</buton>
+                <button class="carrousel__suivant">»</buton>
+               
             </div>';
 }
 add_shortcode('carrousel', 'genere_boite');
-

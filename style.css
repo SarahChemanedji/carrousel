@@ -1,11 +1,35 @@
+.effetVague {
+  height: 10vh;
+  background-color: #92b0b1;
+  position: relative;
+}
+
+.effetVague::before {
+  content: "";
+  width: 100%;
+  height: 146px;
+  position: absolute;
+  bottom: -0.3%;
+  left: 0;
+  background-size: auto;
+  background-repeat: repeat no-repeat;
+  background-position: 46vw bottom;
+  background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200  103' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 75L50 71C100 66 200 57 300 38C400 20 500 -8 600 1C700 11 800 57 900 75C1000 94 1100 84 1150 80L1200 75V103H1150C1100 103 1000 103 900 103C800 103 700 103 600 103C500 103 400 103 300 103C200 103 100 103 50 103H0V75Z' fill='%231c282a'/></svg>");
+}
+
+@media (max-width: 850px) {
+  .wave-container::before {
+    height: 73px;
+  }
+}
 .carrousel {
   width: 75%;
   height: 75%;
   top: 10%;
   left: 5%;
   position: fixed;
-  background-color: antiquewhite;
   transform: scale(0);
+  background-color: #1C282A;
   transition: transform 0.5s;
 }
 @media screen and (min-width: 720px) {
@@ -23,10 +47,8 @@
   top: 4%;
   right: 2%;
   z-index: 3;
-  padding: 0.4rem;
-  border-radius: 50%;
-  color: #ffffff;
-  background-color: rgba(50, 65, 41, 0.831372549);
+  color: #1C282A;
+  background-color: transparent;
   cursor: pointer;
 }
 
@@ -54,7 +76,7 @@
 
 .carrousel--activer {
   transform: scale(1);
-  border: 2rem solid #374231;
+  z-index: 10;
 }
 
 .carrousel__form {
@@ -62,44 +84,35 @@
   bottom: 0;
   text-align: center;
   width: 100%;
-  background-color: rgba(140, 168, 124, 0.3803921569);
+  background-color: rgba(28, 40, 42, 0.9411764706);
 }
 
 .carrousel__rad {
   display: inline-block;
   margin: 5px;
-  accent-color: #8CA87C;
+  accent-color: #3FA882;
   cursor: pointer;
 }
 
-.flechDroite {
-  z-index: 5;
-  border: solid #374231;
-  transform: scale(2);
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 3px;
+.carrousel__suivant, .carrousel__precedent {
   position: absolute;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #3FA882;
+  font-size: 1rem;
+  background-color: transparent;
+  border: #3FA882 2px solid;
+  border-radius: 25px;
   top: 50%;
-  right: 2%;
-  transform: rotate(-45deg);
-  cursor: pointer;
 }
 
-.flechGauche {
-  z-index: 5;
-  border: solid #374231;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 3px;
-  position: absolute;
-  top: 50%;
-  left: 2%;
-  transform: rotate(135deg);
-  cursor: pointer;
+.carrousel__precedent {
+  left: 10px;
 }
 
-.flechDroite:hover, .flechGauche:hover {
-  border: solid #FFEBEB;
-  border-width: 0 3px 3px 0;
+.carrousel__suivant {
+  right: 10px;
 }/*# sourceMappingURL=style.css.map */
